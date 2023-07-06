@@ -1,6 +1,7 @@
 class Manipulator:
     def __init__(self, joints: list):
         self.number_joints = len(joints)
+        self.system_coordinate = CoordinateSystem(1, 1, 1)
 
 class CoordinateSystem:
     # if X × Y = Z - this is right vector triples
