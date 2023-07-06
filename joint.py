@@ -5,6 +5,7 @@ class Joint:
         self.name = name
         self._limit_of_movement = limit_of_movement
         self._length = length
+        self.coordinate = 0
 
     def get_limits(self):
         return self._limit_of_movement
