@@ -21,7 +21,7 @@ try:
     serial_teensy = serial.Serial(teensy_port, baud)
     serial_arduino = serial.Serial(arduino_port, baud)
     connect = Connection([serial_teensy, serial_arduino])
-    connect.push("test")
+    connect.push(0, "test")
 except serial.SerialException:
     logger.error("Serial port not defined")
 
